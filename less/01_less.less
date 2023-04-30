@@ -1,0 +1,60 @@
+.container{
+  width: 200px;
+  height: 200px;
+  background-color: orangered;
+  .box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(195, 153, 153);
+  }
+}
+// 定义变量
+@mainColor:#f3c258;
+@smallFontSize:12px;
+@normalFontSize:14px;
+@bigFontSize:18px;
+
+
+.box1{
+ 
+
+  .p1{
+    font-size: @normalFontSize;
+  }
+  h1{
+    .kw{
+      color:@mainColor;
+      font-size: @smallFontSize;
+    }
+  }
+  p{
+    a.link{
+      color:@mainColor;
+      font-size: @smallFontSize;
+
+      &:hover{
+        color:aquamarine;
+      }
+    }
+  }
+}
+
+
+//  <!-- exercice & -->
+
+.list{
+  .item{
+    font-size: 20px;
+  &:hover{
+    color:@mainColor;
+  }
+  &:nth-child(1){
+    color:antiquewhite;
+  }
+  &:nth-child(2){
+    color:blueviolet;
+  }
+  }
+
+
+}
