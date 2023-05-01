@@ -1,0 +1,39 @@
+@import url(./variable.less);
+
+body{
+  font-size: @normalFontSize;
+  background-color: #dadad7;
+}
+
+// tags tag
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags .tag{
+  position:relative;
+  padding:.8vw;
+  font-size: 3.2vw;
+  color:@mainColor;
+  border:1px solid red;
+  margin-right:.8vw;
+  border-radius:.8vw;
+
+  &.ticket{
+    padding-left: 7.2vw;
+
+  }
+
+  &.ticket::before{
+    content:"bon";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    padding:0 2.6vw;
+    background-color: #ecd7d0;
+
+
+  }
+}

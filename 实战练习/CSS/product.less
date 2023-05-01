@@ -1,0 +1,52 @@
+@import url(../CSS/variable.less);
+@import url(../CSS/mixins.less);
+
+.product{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .item{
+    box-sizing: border-box;
+    width: 46.6667vw;
+    // height: 53.3333vw;
+    margin-top: 1.6vw;
+    overflow: hidden;
+    border-radius: 1.3333vw;
+    background-color: #fff;
+    color:#666;
+    
+    &:nth-child(2n){
+      margin-left:1.6vw;
+    }
+
+    
+    .album{
+      img{
+        width:100%;
+      }
+    }
+
+    .info{
+      padding:2.6667vw;
+    
+
+      .company{
+        text-indent: 4.8vw;
+        background:url(../img/company.png) no-repeat left center/4vw 4vw;
+      }
+
+      // .desc{
+      //   text-indent: 4.8vw;
+
+      //   background: url(../img/ziying.png) no-repeat left center/4vw 4vw;
+      //   font-size: @smalFontSize;
+      //   color: #999;
+
+      //   .nowrap();
+      // }
+    }
+
+  }
+}

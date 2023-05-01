@@ -1,0 +1,15 @@
+.pxToRem(@px){
+  // width: 1rem * (@px/37.5);
+  // height:1rem * (@px/37.5);
+  result: 1rem * (@px/37.5);
+}
+.box{
+//  .pxToRem(100);
+  width:.pxToRem(100)[result];
+  height:.pxToRem(100)[result];
+
+  background-color: rgb(176, 216, 202);
+}
+p{
+  font-size: .pxToRem(14)[result];
+}
